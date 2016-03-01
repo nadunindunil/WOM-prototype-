@@ -53,7 +53,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/wall',
       views: {
         'wal': {
-          templateUrl: 'templates/wall.html'
+          templateUrl: 'templates/wall.html',
+          controller: 'WallCtrl'
         }
       }
     })
@@ -61,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/fav',
       views: {
         'favo': {
-          templateUrl: 'templates/fav.html'
+          templateUrl: 'templates/fav.html',
+          controller: 'FavCtrl'
         }
       }
     })
@@ -69,7 +71,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/settings',
       views: {
         'sett': {
-          templateUrl: 'templates/settings.html'
+          templateUrl: 'templates/settings.html',
+          controller: 'SettingsCtrl'
         }
       }
     })

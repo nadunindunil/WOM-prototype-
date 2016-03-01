@@ -16,3 +16,14 @@
 {
   color: white!important;;
 }
+#map {
+  height: 100%;
+}
+
+.scroll{
+  height: 100%;
+}
+
+.bar{
+  background-color: coral;
+}

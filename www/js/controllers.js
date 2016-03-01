@@ -50,7 +50,36 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+
+
+
+  var options = {timeout: 10000, enableHighAccuracy: true};
+
+
+
+
+  var latLng = new google.maps.LatLng(-22.9068, -43.1729);
+
+  var mapOptions = {
+    center: latLng,
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+  .controller('WallCtrl', function($scope, $stateParams) {
+  })
+
+  .controller('FavCtrl', function($scope, $stateParams) {
+  })
+
+  .controller('SettingsCtrl', function($scope, $stateParams) {
+  })
+
+;
